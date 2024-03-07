@@ -83,3 +83,23 @@ while true:
     for menu, price in
 menu_dict.items():
     print(f"{menu.capitalize()}-{price}rupiah)
+
+    pesanan = input("\nMasukkan nama menu yang ingin dipesan atau 'selesai' untuk menyelesaikan pesanan: ").lower()
+    if pesanan == 'selesai':
+        break
+        
+    elif pesanan in menu_dict:
+        try:
+            jumlah = int(input(f"Masukkan jumlah {pesanan.capitalize()} yang ingin dipesan: "))
+            pesan_menu(pesanan, jumlah)
+        except ValueError:
+            print("Mohon masukkan angka untuk jumlah pesanan.")
+
+    else:
+        print("Maaf, menu tidak tersedia.")
+
+    #Menampilkan pesanan dan menghitung total harga
+    print("\nRangkuman Pesanan :")
+    tampilkan_pesanan()
+    bayar_pesanan()
+    
