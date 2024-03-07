@@ -82,7 +82,7 @@ while true:
     print("\npilihan menu:")
     for menu, price in
 menu_dict.items():
-    print(f"{menu.capitalize()}-{price}rupiah)
+    print(f"{menu.capitalize()}-{price}rupiah")
 
     pesanan = input("\nMasukkan nama menu yang ingin dipesan atau 'selesai' untuk menyelesaikan pesanan: ").lower()
     if pesanan == 'selesai':
