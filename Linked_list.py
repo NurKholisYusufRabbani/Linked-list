@@ -76,7 +76,7 @@ def bayar_pesanan():
 
 #interaksi dengan pengguna 
 print("selamat datang di miexue! silahkan memesan menu:")
-while true:
+while True:
     print("\npilihan menu:")
     for menu, price in menu_dict.items():
         print(f"{menu.capitalize()}-{price}rupiah")
