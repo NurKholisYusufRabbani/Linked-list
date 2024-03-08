@@ -22,7 +22,6 @@ class LinkedList:
             while current.next:
                 current = current.next
             current.next = new_node  #Menambahkan node baru di belakang linked list
-            
 
     def display_menu(self):
         current = self.head
@@ -70,19 +69,17 @@ def tampilkan_pesanan():
 
 #fungsi untuk menghitung total harga pesanan 
 def bayar_pesanan():
-    total_price =
-menu_list.calculate_total_price()
+    total_price = menu_list.calculate_total_price()
     print("menghitung total...")
     time.sleep(1)
     print(f"total biaya yang harus dibayar adalah:{total_price} rupiah. terima kasih sudah memesan!")
 
 #interaksi dengan pengguna 
-    print("selamat datang di miexue! silahkan memesan menu:")
+print("selamat datang di miexue! silahkan memesan menu:")
 while true:
     print("\npilihan menu:")
-    for menu, price in
-menu_dict.items():
-    print(f"{menu.capitalize()}-{price}rupiah")
+    for menu, price in menu_dict.items():
+        print(f"{menu.capitalize()}-{price}rupiah")
 
     pesanan = input("\nMasukkan nama menu yang ingin dipesan atau 'selesai' untuk menyelesaikan pesanan: ").lower()
     if pesanan == 'selesai':
@@ -98,8 +95,8 @@ menu_dict.items():
     else:
         print("Maaf, menu tidak tersedia.")
 
-    #Menampilkan pesanan dan menghitung total harga
-    print("\nRangkuman Pesanan :")
-    tampilkan_pesanan()
-    bayar_pesanan()
+#Menampilkan pesanan dan menghitung total harga
+print("\nRangkuman Pesanan :")
+tampilkan_pesanan()
+bayar_pesanan()
     
